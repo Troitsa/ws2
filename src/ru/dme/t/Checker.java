@@ -46,7 +46,7 @@ public class Checker {
         request.getNP().add(ndsRequest2NP);
         NdsResponse2 ndsResponse2 = fnsndscaws2.getFNSNDSCAWS2Port().ndsRequest2(request);
         for (NdsResponse2.NP np : ndsResponse2.getNP()) {
-            System.out.println(np.getState());
+            System.out.println(StateDecoder.getStateDesc(np.getState()));
         }
     }
 }
