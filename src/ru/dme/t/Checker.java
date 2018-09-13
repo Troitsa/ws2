@@ -27,12 +27,12 @@ public class Checker {
     private long readInn() {
         long inn = 0;
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Требуется ввести ИНН: ");
+        System.out.println("РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РІРІРµРґРёС‚Рµ РРќРќ: ");
         try {
              inn = Long.parseLong(br.readLine());
             long innMax=9999999999L;
             if(inn == 0 || inn < 0 || inn > innMax || inn <= 999999999L) {
-                System.out.println("Введен некорректный ИНН.");
+                System.out.println("РќРµРєРѕСЂСЂРµРєС‚РЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РРќРќ.");
                 readInn();
             }
         } catch (IOException e) {

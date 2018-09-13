@@ -26,10 +26,10 @@ import javax.xml.bind.annotation.XmlType;
  *           &lt;complexType&gt;
  *             &lt;complexContent&gt;
  *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *                 &lt;attribute name="INN" use="required" type="{http://ws.unisoft/FNSNDSCAWS2/Response}»ÕÕ“ËÔ" /&gt;
- *                 &lt;attribute name="KPP" type="{http://ws.unisoft/FNSNDSCAWS2/Response} œœ“ËÔ" /&gt;
- *                 &lt;attribute name="DT" type="{http://ws.unisoft/FNSNDSCAWS2/Response}ƒ‡Ú‡“ËÔ" /&gt;
- *                 &lt;attribute name="State" use="required"&gt;
+ *                 &lt;attribute name="INN" use="required" type="{http://ws.unisoft/FNSNDSCAWS2/Response}–ò–ù–ù–¢–∏–ø" /&gt;
+ *                 &lt;attribute name="KPP" type="{http://ws.unisoft/FNSNDSCAWS2/Response}–ö–ü–ü–¢–∏–ø" /&gt;
+ *                 &lt;attribute name="DT" type="{http://ws.unisoft/FNSNDSCAWS2/Response}–î–∞—Ç–∞–¢–∏–ø" /&gt;
+ *                 &lt;attribute name="StateDecoder" use="required"&gt;
  *                   &lt;simpleType&gt;
  *                     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
  *                       &lt;enumeration value="0"/&gt;
@@ -53,8 +53,8 @@ import javax.xml.bind.annotation.XmlType;
  *           &lt;/complexType&gt;
  *         &lt;/element&gt;
  *       &lt;/sequence&gt;
- *       &lt;attribute name="DTActUL" type="{http://ws.unisoft/FNSNDSCAWS2/Response}ƒ‡Ú‡“ËÔ" /&gt;
- *       &lt;attribute name="DTActFL" type="{http://ws.unisoft/FNSNDSCAWS2/Response}ƒ‡Ú‡“ËÔ" /&gt;
+ *       &lt;attribute name="DTActUL" type="{http://ws.unisoft/FNSNDSCAWS2/Response}–î–∞—Ç–∞–¢–∏–ø" /&gt;
+ *       &lt;attribute name="DTActFL" type="{http://ws.unisoft/FNSNDSCAWS2/Response}–î–∞—Ç–∞–¢–∏–ø" /&gt;
  *       &lt;attribute name="errMsg" type="{http://www.w3.org/2001/XMLSchema}anySimpleType" /&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -191,10 +191,10 @@ public class NdsResponse2 {
      * &lt;complexType&gt;
      *   &lt;complexContent&gt;
      *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
-     *       &lt;attribute name="INN" use="required" type="{http://ws.unisoft/FNSNDSCAWS2/Response}»ÕÕ“ËÔ" /&gt;
-     *       &lt;attribute name="KPP" type="{http://ws.unisoft/FNSNDSCAWS2/Response} œœ“ËÔ" /&gt;
-     *       &lt;attribute name="DT" type="{http://ws.unisoft/FNSNDSCAWS2/Response}ƒ‡Ú‡“ËÔ" /&gt;
-     *       &lt;attribute name="State" use="required"&gt;
+     *       &lt;attribute name="INN" use="required" type="{http://ws.unisoft/FNSNDSCAWS2/Response}–ò–ù–ù–¢–∏–ø" /&gt;
+     *       &lt;attribute name="KPP" type="{http://ws.unisoft/FNSNDSCAWS2/Response}–ö–ü–ü–¢–∏–ø" /&gt;
+     *       &lt;attribute name="DT" type="{http://ws.unisoft/FNSNDSCAWS2/Response}–î–∞—Ç–∞–¢–∏–ø" /&gt;
+     *       &lt;attribute name="StateDecoder" use="required"&gt;
      *         &lt;simpleType&gt;
      *           &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
      *             &lt;enumeration value="0"/&gt;
@@ -230,7 +230,7 @@ public class NdsResponse2 {
         protected String kpp;
         @XmlAttribute(name = "DT")
         protected String dt;
-        @XmlAttribute(name = "State", required = true)
+        @XmlAttribute(name = "StateDecoder", required = true)
         protected String state;
 
         /**
